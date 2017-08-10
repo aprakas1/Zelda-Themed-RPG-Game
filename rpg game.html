@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Zelda RPG Game</title>
+  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- My Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata:700' rel='stylesheet' type='text/css'>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cinzel:900" rel="stylesheet">
+</head>
+
+<body class="appBackground">
+<div class="modal fade" tabindex="-1" role="dialog" id="mymodal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center">You are the legendary Hero of Time: Link. </h4>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center"> Help save Hyrule from a world of darkness! Chose Link or Zelda as your hero to help restore Hyrule to its prior glory... or play as Ganon to destroy Hyrule (but why would you want to do that?!?) </p>
+                </div>
+                 <div class="modal-footer">
+
+<button type="button" class="btn btn-primary block-center" data-dismiss="modal">Prepare for Battle!</button>
+            </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+  <header>
+   
+  </header>
+  <div class="container" id="main-game-section">
+    <div class="container col-lg-12" id="characters-section">
+      <div class="container section-title">Select Your Character</div>
+    </div>
+    <div class="container col-lg-4" id="selected-character-section">
+      <div class="section-title container"></div>
+      <div id="selected-character"></div>
+    </div>
+     <div class="section-title container col-lg-4">Fight Section
+    	<div id="fight-section">
+      		<button class="btn" id="attack-button">Attack</button>
+      		<div class="jumbotron" id="gameMessage"></div>
+    	</div>   
+    </div>	
+    <div id="action">
+      <div class="character-section">
+        <div class="container section-title col-lg-3">
+        	<div id="defender"></div>
+        </div>	
+      </div>
+    </div>    
+    <div class="container" id="available-to-attack-section">
+      <div class="section-title"></div>
+    </div>
+
+
+<!--     <div class="jumbotron" id="gameMessage"></div>
+ -->
+  </div>
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript for bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Game logic -->
+  <script type="text/javascript" src="javascript.js"></script>
+
+</body>
+
+</html>

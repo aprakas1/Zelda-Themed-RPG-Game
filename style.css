@@ -1,0 +1,169 @@
+/*---------------------*/
+/* Body and background */
+/*---------------------*/
+
+
+
+body {
+ 
+  font-family: 'Marcellus SC', serif;
+   background-image: url("background.jpg");
+     background-size: 100% ;
+    background-repeat: no-repeat;
+    z-index:-1000;
+
+}
+header {
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+}
+.characterWrapper {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+}
+#gameMessage {
+  text-align: center;
+  font-size: 10px;
+  width:250px;
+  height:50px;
+  position:relative;
+  
+}
+#choose-enemy-button {
+  visibility: hidden;
+}
+#restart-button {
+  visibility: hidden;
+}
+#turn-counter {
+  font-size: 150%;
+}
+
+/*---------------------*/
+/* Character rendering */
+/*---------------------*/
+.character {
+  width: 450px;
+  margin: 0px 40px 0px 40px;
+  position:relative;
+  left:40px;
+  cursor: pointer;
+  display: inline-block;
+}
+.character img {
+  border: 0 none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+
+}
+.character-name {
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 30px;
+  
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+}
+.character-health {
+  text-align: center;
+}
+
+/*---------------------*/
+/*      Fighting       */
+/*---------------------*/
+.attack {
+  text-align: center;
+}
+.action {
+  margin: 15px 0px;
+}
+#attack-button{
+	visibility: hidden;
+width:150px;
+height:60px;
+position:relative;
+left:45px;
+}
+.btn {
+	background: #000;
+	color: #DBD2C6;	
+
+}
+.enemy {
+	width: 153px;
+	margin: 5px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: red;
+  float: left;
+}
+#attacker {
+	padding: 5px;
+}
+.target-enemy {
+  position:relative;
+  left:-100px;
+  color: white;
+}
+
+/*---------------------*/
+/* Available Oponents  */
+/*---------------------*/
+#available-to-attack-section {
+  float: right;
+}
+#available-to-attack-section img {
+	height: 100px;
+}
+
+/*---------------------*/
+/*      Defender       */
+/*---------------------*/
+
+#defender {
+  width: 190px;
+  height: 160px;
+
+}
+#defender-name {
+  text-align: center;
+  font-family: 'Cormorant SC', serif;
+}
+#defender-image {
+  padding: 0px 16px;
+  margin: 3px 0px;
+}
+#defender-health {
+  text-align: center;
+}
+
+/*---------------------*/
+/*   Media Queries     */
+/*---------------------*/
+@media only screen and (max-device-width: 768px) {
+  .character {
+    display: block;
+  height: 150px;    
+  }
+  
+  #gameMessage {
+  font-size: 12px;
+  }
+}
+
+@media only screen and (max-device-width:460px){
+
+  body img{
+    height:100%;
+    background-size: cover;
+    background:repeat;
+
+  }
+}
